@@ -1,1 +1,1 @@
-# widget-js-sdk-types
+# @wepin/types
