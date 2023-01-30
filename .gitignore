@@ -24,7 +24,6 @@ node_modules/
 
 # Optional eslint cache
 .eslintcache
-.eslintrc.cjs
 
 # dotenv environment variables file
 .env
@@ -56,3 +55,6 @@ node_modules/
 
 # TernJS port file
 .tern-port
+
+dist
+package-lock.json
