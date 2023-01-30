@@ -1,1 +1,1 @@
-export * as GetAccountsFunction from './GetAccountsFunction'
+export * from './GetAccountsFunction'

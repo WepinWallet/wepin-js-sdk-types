@@ -1,1 +1,1 @@
-export * as InitFunction from './InitFunction'
+export * from './InitFunction'
