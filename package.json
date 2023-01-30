@@ -1,0 +1,50 @@
+{
+  "name": "@wepin/types",
+  "version": "0.0.4-alpha",
+  "description": "Types for wepin javascript sdk",
+  "main": "src/index.js",
+  "types": "dist/types/index.d.ts",
+  "author": "IoTrust, Co., Ltd.",
+  "homepage": "https://github.com/WepinWallet/wepin-js-sdk-types/",
+  "license": "MIT",
+  "exports": {
+    "import": "./dist/esnext/index.js",
+    "require": "./dist/commonjs/index.js",
+    "default": "./dist/umd/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WepinWallet/wepin-js-sdk-types.git"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "build:clean": "rimraf ./dist",
+    "build:compile:ESNext": "tsc --module ESNext --outDir ./dist/esnext",
+    "build:compile:CommonJS": "tsc --module NodeNext --outDir ./dist/commonjs",
+    "build:compile:UMD": "tsc --module UMD --outDir ./dist/umd",
+    "build:compile:types": "tsc --emitDeclarationOnly --declaration --outDir ./dist/types",
+    "build:compile": "run-p build:compile:ESNext build:compile:CommonJS build:compile:UMD build:compile:types",
+    "build:copy-package-json": "node ./copy-package.js",
+    "build": "run-s lint build:clean build:compile build:copy-package-json",
+    "type-check": "tsc --noEmit -p tsconfig.json --composite false"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.8.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  },
+  "keywords": [
+    "wepin",
+    "wepinwallet",
+    "wallet"
+  ]
+}

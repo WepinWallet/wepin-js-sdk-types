@@ -1,0 +1,13 @@
+node_modules
+
+package-lock.json
+yarn.lock
+
+src
+resource
+test
+copy-package.js
+.eslintrc.cjs
+.gitignore
+.prettierignore
+.prettierrc
