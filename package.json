@@ -1,6 +1,6 @@
 {
   "name": "@wepin/types",
-  "version": "0.0.4-alpha",
+  "version": "0.0.5-alpha",
   "description": "Types for wepin javascript sdk",
   "main": "src/index.js",
   "types": "dist/types/index.d.ts",
