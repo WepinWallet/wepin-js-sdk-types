@@ -6,3 +6,4 @@ Types for Wepin
 - IWepin
 - IAttributes
 - IAccount
+- IStatus
