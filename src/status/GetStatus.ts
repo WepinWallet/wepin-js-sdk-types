@@ -1,8 +1,8 @@
-export interface IStatus {
-  login: boolean
-  loginStatus?: 'completed' | 'registerRequired'
-}
+export type WepinLifeCycle =
+  | 'not_initialized'
+  | 'initializing'
+  | 'initialized'
+  | 'before_login'
+  | 'login'
 
-export type GetStatusFunction = (option?: {
-  waitForClose: boolean
-}) => Promise<IStatus | undefined>
+export type GetStatusFunction = () => WepinLifeCycle
