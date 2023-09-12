@@ -1,5 +1,7 @@
 import { InitFunction } from '../init/InitFunction'
 import { GetAccountsFunction } from '../account/GetAccountsFunction'
+import { GetStatusFunction } from 'src/status'
+import { LoginFunction } from '../login/Login'
 
 export interface IWepin {
   init: InitFunction
@@ -7,4 +9,7 @@ export interface IWepin {
   openWidget: () => Promise<void>
   closeWidget: () => void
   getAccounts: GetAccountsFunction
+  getStatus: GetStatusFunction
+  login: LoginFunction
+  logout(): () => Promise<void>
 }
