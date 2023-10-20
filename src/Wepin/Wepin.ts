@@ -1,6 +1,6 @@
 import { InitFunction } from '../init/InitFunction'
 import { GetAccountsFunction } from '../account/GetAccountsFunction'
-import { GetStatusFunction } from 'src/status'
+import { GetStatusFunction } from '../status/GetStatus'
 import { LoginFunction } from '../login/Login'
 
 export interface IWepin {
