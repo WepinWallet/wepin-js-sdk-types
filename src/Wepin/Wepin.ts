@@ -5,7 +5,7 @@ import { LoginFunction } from '../login/Login'
 import { GetBalanceFunction } from '../admin/balance/getBalance'
 import { RegisterFunction } from '../admin/register/register'
 import { LoginWithEmailPasswordFunction } from '../admin/loginWithEmail/loginWithEmailAndPassword'
-import { SignUpWithEmailFunction } from '../admin/signinWithEmail/signUpWithEmailAndPassword'
+import { SignUpWithEmailFunction } from '../admin/signupWithEmail/signUpWithEmailAndPassword'
 
 export interface IWepin {
   init: InitFunction
