@@ -5,7 +5,7 @@ export interface IWepinUser {
 interface UserInfo {
   userId: string
   email: string
-  provider: 'google' | 'apple' | 'email'
+  provider: 'google' | 'apple' | 'email' | 'discord' | 'naver'
 }
 
-export type LoginFunction = () => Promise<IWepinUser>
+export type LoginFunction = (email: string) => Promise<IWepinUser>
