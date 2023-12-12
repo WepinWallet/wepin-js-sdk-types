@@ -1,8 +1,9 @@
-import { AttributesType } from '../types'
+import { AttributesType, LoginProviders } from '../types'
 export interface IAttributes {
   type?: AttributesType
   defaultLanguage?: string
   defaultCurrency?: string
+  loginProviders?: Array<LoginProviders>
 }
 
 export type InitFunction = (
