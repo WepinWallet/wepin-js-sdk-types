@@ -7,7 +7,6 @@ export interface IAccountBalance {
 }
 
 export interface ITokenBalance {
-  name: string
   contract: string
   symbol: string
   balance: string
