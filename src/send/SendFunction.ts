@@ -1,4 +1,4 @@
-import { IAccount } from "../account"
+import { IAccount } from '../account'
 
 export interface ISendOptions {
   toAddress: string
